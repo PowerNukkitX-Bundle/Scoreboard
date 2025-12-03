@@ -41,7 +41,7 @@ public class ScoreboardManager implements Listener {
     }
 
     @EventHandler
-    public void on(PlayerLoginEvent event) {
+    public void onPlayerLogin(PlayerLoginEvent event) {
         Player player = event.getPlayer();
         QueuedScoreboard scoreboard = new QueuedScoreboard(getDisplayHeader(player));
         List<IScoreboardLine> lines = new ArrayList<>();
@@ -56,11 +56,11 @@ public class ScoreboardManager implements Listener {
     }
 
     @EventHandler
-    public void on(PlayerQuitEvent event) {
+    public void onPlayerQuit(PlayerQuitEvent event) {
         Player player = event.getPlayer();
         int loaderId = player.getLoaderId();
+        this.scoreboards.remove(player);
         this.lineCache.remove(loaderId);
-        this.scoreboards.remove(loaderId);
     }
 
     protected String getDisplayHeader(Player player) {
