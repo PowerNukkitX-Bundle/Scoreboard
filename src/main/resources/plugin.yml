@@ -1,6 +1,6 @@
 name: Scoreboard
-version: 1.0.1
-api: 2.0.0
+version: ${pom.version}
+api: 3.0.0
 authors: [Buddelbubi]
 description: Add a scoreboard to your PowerNukkitX server.
 main: org.powernukkitx.scoreboard.Scoreboard
