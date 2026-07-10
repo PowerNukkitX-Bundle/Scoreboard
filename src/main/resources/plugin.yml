@@ -3,6 +3,6 @@ version: ${pom.version}
 api: 3.0.0
 authors: [Buddelbubi]
 description: Add a scoreboard to your PowerNukkitX server.
-main: org.powernukkitx.scoreboard.Scoreboard
+main: org.powernukkitx._scoreboard.Scoreboard
 softdepend:
   - PlaceholderAPI

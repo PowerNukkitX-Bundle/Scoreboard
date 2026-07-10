@@ -1,10 +1,10 @@
-package org.powernukkitx.scoreboard.utils;
+package org.powernukkitx._scoreboard.utils;
 
-import cn.nukkit.scoreboard.IScoreboardLine;
-import cn.nukkit.scoreboard.Scoreboard;
-import cn.nukkit.scoreboard.ScoreboardLine;
-import cn.nukkit.scoreboard.scorer.FakeScorer;
 import it.unimi.dsi.fastutil.objects.ObjectArraySet;
+import org.powernukkitx.scoreboard.IScoreboardLine;
+import org.powernukkitx.scoreboard.Scoreboard;
+import org.powernukkitx.scoreboard.ScoreboardLine;
+import org.powernukkitx.scoreboard.scorer.FakeScorer;
 
 import java.util.Collection;
 import java.util.List;
@@ -15,6 +15,7 @@ import java.util.stream.Stream;
 
 /**
  * An improved scoreboard API written for Syodo.
+ *
  * @author PleaseInsertNameHere
  */
 public class QueuedScoreboard extends Scoreboard {
